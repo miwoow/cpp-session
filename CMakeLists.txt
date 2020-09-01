@@ -1,0 +1,28 @@
+cmake_minimum_required(VERSION 2.8)
+
+PROJECT(CPP-Session)
+
+add_compile_options(-std=c++11)
+
+INCLUDE_DIRECTORIES(
+    ./include/
+)
+LINK_DIRECTORIES(
+
+)
+ 
+AUX_SOURCE_DIRECTORY(
+./src/
+DIRA
+)
+ 
+ 
+SET(DIR_SRCS
+${DIRA}
+
+)
+
+ADD_EXECUTABLE(${PROJECT_NAME} ${DIR_SRCS})
+
+TARGET_LINK_LIBRARIES(${PROJECT_NAME})
+ 
